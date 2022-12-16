@@ -1,3 +1,4 @@
 {
-    "editor.maxTokenizationLineLength": 200000
+    "editor.maxTokenizationLineLength": 200000,
+    "liveServer.settings.port": 5502
 }

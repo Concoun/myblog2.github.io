@@ -50,6 +50,7 @@ button:hover {
 }
 
 .sub-heading {
+    font-family: LXGWWenKai-Regular;
     margin-top: 40px;
     line-height: 25px;
     font-size: 1em;
@@ -243,7 +244,7 @@ nav ul li a.active {
 }
 
 .section-two .article-preview .img-section img {
-    width: 100%;
+    width: 80%;
 }
 
 /*.text-section > * {*/
@@ -493,4 +494,5 @@ article {
     line-height: 2;
     text-align: center;
 }
+
 

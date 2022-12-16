@@ -9,18 +9,16 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <a name = "A3"></a>
     <div class="main-wrapper">
         <!--页头开始-->
-        <header>
-             
+        <header>             
             <nav>
-               
                 <div class="logo"><a href="index.html">z的诗词博客站</a></div>
                 <ul>
-                    <li><a href="#" class="active">首页</a></li>
-                    <li><a href="article.html">文章</a></li>
+                    <li><a href="in.html" class="active">首页</a></li>
+                    <li><a href="login.html">登录</a></li>
                     <li><a href="message.html">留言</a></li>
-                    <li class="showSlideBar"><a href="#">关于作者</a></li>
                 </ul>
             </nav>
             <div class="banner">
@@ -36,6 +34,14 @@
         </header>
         <!--页头结束-->
 
+        <style>
+            /* 第一步：使用font-face声明字体 */
+            @font-face {
+                font-family: "LXGWWenKai-Regular";
+                src: url("/static/LXGWWenKai-Regular.ttf");
+            }
+        </style>
+
         <!--内容开始-->
         <div class="content">
             <section class="section-one">
@@ -46,58 +52,31 @@
                         <div class="sub-heading">You're only supposed to blow the bloody doors off.</div>
                     </div>
                     <div class="icon-group">
-                        <span class="icon"><a href="article.html">文章</a></span>
                         <span class="icon"><a href="#A1">个人介绍</a></span>
                         <span class="icon"><a href="#A2">技能树</a></span>
                     </div>
                 </div>
             </section>
 
-            <section class="section-two"><a name = "A1"></a>
+            <section class="section-two">
                 <div class="article-preview clear-fix">
                     <div class="img-section">
-                        <img src="img/1.jpg">
+                        <img src="img/touxiang.jpg">
                     </div>
-                    <div class="text-section">
+                    <div class="text-section"><a name = "A1"></a>
                         <h2><a>就读下沙小清华</a></h2>
                         <div class="sub-heading">学习前端ing</div>
-                        <div class="sub-heading"> 专业： 软件工程
-                            
-                            </div>
+                        <div class="sub-heading"> 专业： 软件工程</div>
 
-                            <div class="sub-heading" >在学校里参加比赛等
-                                </div>
-                                <div class="sub-heading" > 
-                                    </div>
-                                
-                    <div class="sub-heading">开心学习，喜欢读一些诗词</div>
-
-
-                    </div>
-
-
-
-                </div>
-
-                <div class="article-preview clear-fix">
-                    <div class="text-section">
-                        <h2>喜欢跑步</h2>
-                        <div class="sub-heading"> </div>
-                        <!--
-                            <div class="sub-heading">跑过很多次半马，希望毕业前能跑次全马； </div>
-                            <div class="sub-heading">带过街头健身队，双力臂前水平还是不在话下哒;</div>
-                        -->
+                        <div class="sub-heading" >在学校里参加比赛等</div>        
                         
-
-                    </div>
-                    <div class="img-section">
-                        <img src="img/2.jpg">
+                        <div class="sub-heading">开心学习，喜欢读一些诗词</div>
                     </div>
                 </div>
 
                 <div class="article-preview clear-fix">
                     <div class="img-section">
-                        <img src="img/3.jpg">
+                        <img src="img/touxiang.jpg">
                     </div>
                     <div class="text-section">
                             <h2>喜欢诗词</h2>
@@ -164,21 +143,13 @@
         </div>
         <!--内容结束-->
 
+
+
         <!--页脚开始-->
         <footer>
-            <div class="share-group">
-                <ul>          
-                    <!-- <li><a href="#" target="view_window">简书</a></li>
-                    <li><a href="111" target="view_window">邮箱</a></li>-->
-                </ul>
-            </div>
-
             <div class="copy">
                 <span>&copy;1023199080@qq.com</span>
             </div>
-
-         
-           
         </footer>
         <!--页脚结束-->
     </div>
@@ -198,7 +169,7 @@
     </div>
     <!--回到顶部-->
     <div class="back-to-top">
-        <button>回到顶部</button>
+        <button><a href="#A3">回到顶部</a></button>
     </div>
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
