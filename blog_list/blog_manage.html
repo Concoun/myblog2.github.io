@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="x-ua-compatible" content="IE=7,9,10" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog_list</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/bolg_list.css">
+    <link rel="stylesheet" href="../css/publish.css">
+    <script src="../js/publish.js"></script>
+
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div class="nav">
+        <img src="../img/touxiang.jpg" alt="">
+        <span class="title">我的博客系统</span>
+        <!-- 用来占据中间位置 -->
+        <span class="spacer"></span>
+        <a href="blog_list.html">主页</a>
+        <a href="blog_manage.html">管理页</a>
+        <a href="blog_edit.html">写博客</a>
+        <a href="../login.html">注销</a>
+    </div>
+
+
+        <!-- 右侧内容详情 -->
+        <div class="container-right1" >
+                <div id="total1">
+                    <div class="top">
+                        发布管理
+                    </div>
+                    <div class="main">
+                        <div>
+                            <select id="s" class="sel">
+                                <option selected>文章名称</option>
+                                <option>诗词标题</option>
+                                <option>链接</option>
+                            </select>
+                            <input id="seach" class="inp" type="text" placeholder="请输入文章名称(可以空格隔开)"/>
+                            <button id="qstnMark" onclick="seach()">Q</button>
+                            <input id="addTmplFile" type="button" value="新增文章文件" onclick="addTmplFile()" />
+                        </div>
+                        <div>
+                            <table id="table1" cellspacing="0px">
+                                <tr class="tableTitle" align="center">
+                                    <td class="col1">文章名称</td>
+                                    <td id="onlyId" style="display: none"></td>
+                                    <td class="col2">诗词标题</td>
+                                    <td class="col3">链接</td>
+                                    <td class="col4">备注</td>
+                                    <td class="col5">操作</td>
+                                </tr>
+                            </table>
+                            <div id="lowerLbl" align="center">
+                                <p>共</p>
+                                <p id="rowsNum">0</p>
+                                <p>条</p>
+                                <select id="sel" onclick="pagination()">
+                                    <option id="opt0" value="10">10条/页</option>
+                                    <option id="opt1" value="20">20条/页</option>
+                                    <option id="opt2" value="50">50条/页</option>
+                                </select>
+                                &nbsp;
+                                <button onclick="last()"><</button>
+                                <button id="pno" style="background-color: #5899ce; color: white">1</button>
+                                <button onclick="next()">></button>
+                                &nbsp;
+                                <p>前往</p>
+                                <input type="text" id="gopg" onclick="gopage()" />
+                                <p>页</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                
+                <div id="total2">
+                    <div class="top">
+                        发布管理列表
+                        <p style="display: inline; color: #999999"> > 发布管理 </p>
+                    </div>
+                    <div class="main" align="center">
+                        <table id="table2" cellspacing="18px">
+                            <tr class="table2Tr">
+                                <td class="table2Td1" align="right">文章名称</td>
+                                <td class="table2Td2"><input id="name" type="text" placeholder="名称" /></td>
+                                <td class="table2Td1" align="right"><p>*</p>文章标识</td>
+                                <td class="table2Td2"><input id="id" type="text" placeholder="文章唯一标识" /></td>
+                            </tr>
+                            <tr class="table2Tr">
+                                <td class="table2Td1" align="right"><p>*</p>诗词标题</td>
+                                <td class="table2Td2"><input id="title" type="text" placeholder="诗词标题" /></td>
+                                <td class="table2Td1" align="right">链接地址</td>
+                                <td class="table2Td2"><input id="address" type="text" placeholder="链接地址" /></td>
+                            </tr>
+                            <tr class="table2Tr">
+                                <td class="table2Td1" align="right">备注</td>
+                                <td class="table2Td3" colspan="3"><input id="remarks" type="text" placeholder="备注" style="width: 1021px" /></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input id="submit1" style="height: 35px; width: 80px;" type="button" value="提交" onclick="submit1()" /></td>
+                                <td><input id="submit2" style="height: 35px; width: 80px; display: none" type="button" value="提交" onclick="submit2()" /></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

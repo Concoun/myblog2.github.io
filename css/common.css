@@ -18,7 +18,7 @@ html, body {
     width: 100%;
     height: 50px;
     background-color: rgba(51, 51, 51, 0.4);
-    color: #fff;
+    color: rgb(215, 168, 168);
 
     display: flex;
     justify-content: left;
@@ -77,6 +77,16 @@ html, body {
     border-radius: 10px;
 }
 
+/*编辑页使用*/
+.container-right1 {
+    height: 100%;
+    /* 和左侧部分中间留出50px间隙 */
+    width: auto;
+    /* 若内容溢出则自动加上滚动条 */
+    overflow: auto;
+ 
+    border-radius: 10px;
+}
 /* 展示用户信息的卡片 */
 .card {
     background-color: rgba(255, 255, 255, 0.8);

@@ -6,7 +6,7 @@
 
 /* 博客的标题 */
 .blog .title {
-    color: black;
+    color: rgb(41, 27, 27);
     font-size: 20px;
     font-weight: 700;
     text-align: center;
@@ -47,4 +47,12 @@
 .blog .detail:hover {
     background-color: #000;
     color: #fff;
+}
+table{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container-right{
+    text-align: center;
 }
